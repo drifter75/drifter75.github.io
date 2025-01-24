@@ -9,23 +9,25 @@
       
       
       
+        <link rel="prev" href="../netstat/">
       
-        <link rel="next" href="Linux/ClearLinuxCache/">
+      
+        <link rel="next" href="../smartctl/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
     
     
       
-        <title>My Notes</title>
+        <title>Scripts - My Notes</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -77,6 +79,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#sending-test-logs-to-splunk" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -89,7 +96,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="My Notes" class="md-header__button md-logo" aria-label="My Notes" data-md-component="logo">
+    <a href="../.." title="My Notes" class="md-header__button md-logo" aria-label="My Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -109,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Scripts
             
           </span>
         </div>
@@ -186,7 +193,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="My Notes" class="md-nav__button md-logo" aria-label="My Notes" data-md-component="logo">
+    <a href="../.." title="My Notes" class="md-nav__button md-logo" aria-label="My Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -201,17 +208,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -220,7 +220,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -229,17 +228,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -253,7 +254,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Linux
@@ -267,7 +268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Linux/ClearLinuxCache/" class="md-nav__link">
+      <a href="../ClearLinuxCache/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -288,7 +289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Linux/Generic/" class="md-nav__link">
+      <a href="../Generic/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -309,7 +310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Linux/HDD/" class="md-nav__link">
+      <a href="../HDD/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -330,7 +331,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Linux/PS1/" class="md-nav__link">
+      <a href="../PS1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -351,7 +352,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Linux/PiHole/" class="md-nav__link">
+      <a href="../PiHole/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -372,7 +373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Linux/crontab/" class="md-nav__link">
+      <a href="../crontab/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -393,7 +394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Linux/journalctl/" class="md-nav__link">
+      <a href="../journalctl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -414,7 +415,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Linux/netstat/" class="md-nav__link">
+      <a href="../netstat/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -432,10 +433,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="Linux/scripts/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Scripts
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -444,6 +463,42 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sending-test-logs-to-splunk" class="md-nav__link">
+    <span class="md-ellipsis">
+      sending test logs to Splunk
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-backups-and-keep-last-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delete backups and keep last 3
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -456,7 +511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Linux/smartctl/" class="md-nav__link">
+      <a href="../smartctl/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -477,7 +532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Linux/ssh-keygen/" class="md-nav__link">
+      <a href="../ssh-keygen/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -498,7 +553,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Linux/symlink_script/" class="md-nav__link">
+      <a href="../symlink_script/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -519,7 +574,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Linux/trusted.gpg/" class="md-nav__link">
+      <a href="../trusted.gpg/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -540,7 +595,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Linux/user/" class="md-nav__link">
+      <a href="../user/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -561,7 +616,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Linux/whileLoop/" class="md-nav__link">
+      <a href="../whileLoop/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -624,7 +679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Miscellaneous/CygWin/" class="md-nav__link">
+      <a href="../../Miscellaneous/CygWin/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -645,7 +700,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Miscellaneous/Firefox/" class="md-nav__link">
+      <a href="../../Miscellaneous/Firefox/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -666,7 +721,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Miscellaneous/LibreELEC/" class="md-nav__link">
+      <a href="../../Miscellaneous/LibreELEC/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -687,7 +742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Miscellaneous/MKDocsBuildScript/" class="md-nav__link">
+      <a href="../../Miscellaneous/MKDocsBuildScript/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -708,7 +763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Miscellaneous/MKDocsImage/" class="md-nav__link">
+      <a href="../../Miscellaneous/MKDocsImage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -729,7 +784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Miscellaneous/MarkdownTextColour/" class="md-nav__link">
+      <a href="../../Miscellaneous/MarkdownTextColour/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -750,7 +805,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Miscellaneous/PHP%20Remote%20IP/" class="md-nav__link">
+      <a href="../../Miscellaneous/PHP%20Remote%20IP/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -771,7 +826,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Miscellaneous/SQLServer/" class="md-nav__link">
+      <a href="../../Miscellaneous/SQLServer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -792,7 +847,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Miscellaneous/git/" class="md-nav__link">
+      <a href="../../Miscellaneous/git/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -813,7 +868,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Miscellaneous/github/" class="md-nav__link">
+      <a href="../../Miscellaneous/github/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -834,7 +889,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Miscellaneous/hetzner%20mtu/" class="md-nav__link">
+      <a href="../../Miscellaneous/hetzner%20mtu/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -855,7 +910,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Miscellaneous/markdown-supported-languages/" class="md-nav__link">
+      <a href="../../Miscellaneous/markdown-supported-languages/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -918,7 +973,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Swarm/Docker/" class="md-nav__link">
+      <a href="../../Swarm/Docker/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -939,7 +994,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Swarm/NCloud/" class="md-nav__link">
+      <a href="../../Swarm/NCloud/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -960,7 +1015,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Swarm/Swarm/" class="md-nav__link">
+      <a href="../../Swarm/Swarm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -981,7 +1036,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Swarm/logging/" class="md-nav__link">
+      <a href="../../Swarm/logging/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1002,7 +1057,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Swarm/node_exporter/" class="md-nav__link">
+      <a href="../../Swarm/node_exporter/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1023,7 +1078,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Swarm/security%20scanner/" class="md-nav__link">
+      <a href="../../Swarm/security%20scanner/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1044,7 +1099,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Swarm/volume/" class="md-nav__link">
+      <a href="../../Swarm/volume/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1100,7 +1155,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Swarm/PostgreSQL/Postgres15/" class="md-nav__link">
+      <a href="../../Swarm/PostgreSQL/Postgres15/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1121,7 +1176,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Swarm/PostgreSQL/Postgres15Collation/" class="md-nav__link">
+      <a href="../../Swarm/PostgreSQL/Postgres15Collation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1142,7 +1197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Swarm/PostgreSQL/postgres15auto/" class="md-nav__link">
+      <a href="../../Swarm/PostgreSQL/postgres15auto/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1213,7 +1268,7 @@
   
   
     <li class="md-nav__item">
-      <a href="WSL/compact_vhdx/" class="md-nav__link">
+      <a href="../../WSL/compact_vhdx/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1276,7 +1331,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Windows/batch/" class="md-nav__link">
+      <a href="../../Windows/batch/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1339,7 +1394,7 @@
   
   
     <li class="md-nav__item">
-      <a href="apache/execute%20script%20from%20html/" class="md-nav__link">
+      <a href="../../apache/execute%20script%20from%20html/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1378,6 +1433,32 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#sending-test-logs-to-splunk" class="md-nav__link">
+    <span class="md-ellipsis">
+      sending test logs to Splunk
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-backups-and-keep-last-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delete backups and keep last 3
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1391,11 +1472,46 @@
                   
 
 
-  <h1>Home</h1>
+  <h1>Scripts</h1>
 
-<p>Technical notes <span style="color: purple;">(20250124) </p>
-<p><img alt="🕯" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f56f.svg" title=":candle:" /></p>
-<p><img alt="😄" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f604.svg" title=":smile:" /></p>
+<h3 id="sending-test-logs-to-splunk">sending test logs to Splunk</h3>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+
+<span class="nv">counter</span><span class="o">=</span><span class="nv">$1</span>
+<span class="nv">i</span><span class="o">=</span><span class="m">1</span>
+<span class="nv">rel</span><span class="o">=</span><span class="k">$(</span>lsb_release<span class="w"> </span>-ds<span class="k">)</span>
+<span class="nv">host</span><span class="o">=</span><span class="k">$(</span>hostname<span class="k">)</span>
+
+<span class="k">while</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="nv">$i</span><span class="w"> </span>-le<span class="w"> </span><span class="nv">$counter</span><span class="w"> </span><span class="o">]</span>
+<span class="k">do</span>
+<span class="w">    </span><span class="nv">THEDATE</span><span class="o">=</span><span class="sb">`</span>date<span class="w"> </span>+<span class="s2">&quot;%Y%m%d.%H:%M:%S&quot;</span><span class="sb">`</span>
+<span class="w">    </span><span class="nv">message</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span>-n<span class="w"> </span><span class="nv">$THEDATE</span><span class="k">)</span><span class="s2"> Test log for Splunk from </span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span>-n<span class="w"> </span><span class="nv">$host</span><span class="k">)</span><span class="s2"> using </span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span>-n<span class="w"> </span><span class="nv">$rel</span><span class="k">)</span><span class="s2"> , this is </span><span class="nv">$i</span><span class="s2"> of </span><span class="nv">$counter</span><span class="s2"> &quot;</span>
+<span class="w">    </span>curl<span class="w"> </span>-s<span class="w"> </span>http://192.168.1.85:8088/services/collector/event<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Splunk 1b627160-517c-443d-ba98-fce35c00f2df&quot;</span><span class="w"> </span>-d<span class="w"> </span><span class="s1">&#39;{ &quot;event&quot;:&quot;&#39;</span><span class="s2">&quot;</span><span class="nv">$message</span><span class="s2">&quot;</span><span class="s1">&#39;&quot;}&#39;</span><span class="w"> </span>&gt;<span class="w"> </span>/dev/null
+<span class="w">    </span><span class="nv">i</span><span class="o">=</span><span class="k">$((</span><span class="w"> </span><span class="nv">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="k">))</span><span class="w"> </span><span class="p">;</span><span class="w"> </span>sleep<span class="w"> </span><span class="m">1</span>
+<span class="k">done</span>
+</code></pre></div>
+<h3 id="delete-backups-and-keep-last-3">Delete backups and keep last 3</h3>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+
+<span class="c1"># Define the directory where backups are stored</span>
+<span class="nv">BACKUP_DIR</span><span class="o">=</span><span class="s2">&quot;/home/backup&quot;</span>
+
+<span class="c1"># Change to the backup directory</span>
+<span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$BACKUP_DIR</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Backup directory not found!&quot;</span><span class="p">;</span><span class="w"> </span><span class="nb">exit</span><span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w"> </span><span class="o">}</span>
+
+<span class="c1"># List all files in the directory sorted by modification time (newest first) and exclude the last three</span>
+<span class="nv">FILES_TO_DELETE</span><span class="o">=</span><span class="k">$(</span>ls<span class="w"> </span>-t<span class="w"> </span><span class="p">|</span><span class="w"> </span>tail<span class="w"> </span>-n<span class="w"> </span>+4<span class="k">)</span>
+
+<span class="c1"># Loop through the files and delete them</span>
+<span class="nv">IFS</span><span class="o">=</span><span class="s1">$&#39;\n&#39;</span><span class="w">  </span><span class="c1"># Change the Internal Field Separator to handle filenames with spaces</span>
+<span class="k">for</span><span class="w"> </span>FILE<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="nv">$FILES_TO_DELETE</span>
+<span class="k">do</span>
+<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Deleting </span><span class="nv">$FILE</span><span class="s2">&quot;</span>
+<span class="w">    </span>rm<span class="w"> </span>-f<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$FILE</span><span class="s2">&quot;</span>
+<span class="k">done</span>
+
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Old backups deleted, keeping the last three most recent ones.&quot;</span>
+</code></pre></div>
 
 
 
@@ -1501,10 +1617,10 @@
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy", "search.suggest", "search.highlight", "header.autohide"], "search": "assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "search.suggest", "search.highlight", "header.autohide"], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.56dfad97.min.js"></script>
+      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
       
     
   </body>
